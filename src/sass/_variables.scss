@@ -1,0 +1,60 @@
+$ilaese-first:      #600b0b;
+$ilaese-second:     #890a06;
+$ilaese-third:      #8f5939;
+$ilaese-fourth:     #edcdba;
+$ilaese-fifth:      #fff8f4;
+$ilaese-sixth:      #101741;
+$ilaese-seventh:    #b44e22;
+$ilaese-eighth:     #fbab00;
+$ilaese-nineth:     #fbd300;
+$ilaese-gray:       #f2f2f2;
+
+$theme-colors: (
+  'ilaese-first':     $ilaese-first,
+  'ilaese-second':    $ilaese-second, 
+  'ilaese-third':     $ilaese-third,
+  'ilaese-fourth':    $ilaese-fourth,
+  'ilaese-fifth':     $ilaese-fifth,
+  'ilaese-sixth':     $ilaese-sixth,
+  'ilaese-seventh':   $ilaese-seventh,
+  'ilaese-eighth':    $ilaese-eighth,
+  'ilaese-nineth':    $ilaese-nineth,
+  'ilaese-gray':      $ilaese-gray,
+);
+
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  'ilaese-32': $spacer * 2,
+  'ilaese-64': $spacer * 4,
+  'ilaese-80': $spacer * 5,
+);
+
+$font-family-sans-serif: 'Montserrat', sans-serif;
+$font-families: (
+  'montserrat': 'Montserrat',
+  'playfair': 'Playfair Display',
+);
+
+$font-sizes: (
+  14: 14px,
+  32: 32px,
+);
+
+$underline-height:          6px;
+$underline-radius:          $underline-height / 2;
+
+$font-weight-thin:          100;
+$font-weight-extra-light:   200;
+$font-weight-light:         300;
+$font-weight-regular:       400;
+$font-weight-medium:        500;
+$font-weight-semibold:      600;
+$font-weight-bold:          700;
+$font-weight-extrabold:     800;
+$font-weight-black:         900;
