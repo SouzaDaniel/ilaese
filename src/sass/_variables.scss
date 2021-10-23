@@ -31,6 +31,7 @@ $spacers: (
   4: $spacer * 1.5,
   5: $spacer * 3,
   'ilaese-32': $spacer * 2,
+  'ilaese-40': $spacer * 2.5,
   'ilaese-64': $spacer * 4,
   'ilaese-80': $spacer * 5,
 );
@@ -58,3 +59,7 @@ $font-weight-semibold:      600;
 $font-weight-bold:          700;
 $font-weight-extrabold:     800;
 $font-weight-black:         900;
+
+$btn-padding-y:             16px;
+$btn-padding-x:             32px;
+$btn-font-size:             14px;
