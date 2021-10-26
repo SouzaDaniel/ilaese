@@ -54,9 +54,9 @@ function pt_repository()
     "map_meta_cap" => true,
     "hierarchical" => false,
     "query_var" => true,
-    "rewrite" => ["slug" => "repositorios", "with_front" => true],
+    "rewrite" => ["slug" => "repositorio", "with_front" => true],
     "supports" => ["title"],
-    'taxonomies' => ['projects_types'],
+    'taxonomies' => ['period'],
   ];
 
   register_post_type("repository", $args);

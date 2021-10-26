@@ -11,7 +11,7 @@ $theme = get_bloginfo("template_url") . '/dist';
         <div class="col-md-11 col-lg-10">
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item"><a href="<?= get_home_url() ?>">Home</a></li>
               <li class="breadcrumb-item active">
                 <?= the_title(); ?>
               </li>

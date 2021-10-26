@@ -280,43 +280,6 @@ $theme = get_bloginfo("template_url") . '/dist';
   }
   ?>
 
-  <section class="bg-ilaese-gray">
-    <div class="container pt-ilaese-96 pb-ilaese-128">
-      <div class="row justify-content-center">
-        <div class="col-md-11 col-lg-10">
-          <div>
-            <h2 class="
-                    mb-4
-                    text-center
-                    fz-32
-                    ff-playfair
-                    fw-bold
-                    text-ilaese-black
-                  ">
-              Veja conteúdo exclusivo no Youtube
-            </h2>
-            <div class="row row-cols-1 row-cols-md-2 py-3 gapy-3">
-              <div class="col">
-                <div class="ratio ratio-16x9">
-                  <iframe src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" title="YouTube video" allowfullscreen></iframe>
-                </div>
-              </div>
-              <div class="col">
-                <div class="ratio ratio-16x9">
-                  <iframe src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" title="YouTube video" allowfullscreen></iframe>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <div>
-
-  </div>
-
   <section class="bg-ilaese-fourth">
     <div class="container py-ilaese-96">
       <div class="row justify-content-center">
