@@ -1,0 +1,136 @@
+$ilaese-first:          #600b0b;
+$ilaese-second:         #890a06;
+$ilaese-third:          #8f5939;
+$ilaese-fourth:         #edcdba;
+$ilaese-fifth:          #fff8f4;
+$ilaese-sixth:          #101741;
+$ilaese-seventh:        #b44e22;
+$ilaese-eighth:         #fbab00;
+$ilaese-nineth:         #fbd300;
+$ilaese-gray:           #f2f2f2;
+$ilaese-gray-second:    #828282;
+$ilaese-gray-third:     #424242;
+$ilaese-gray-fourth:    #e5e5e5;
+$ilaese-gray-fifth:     #bdbdbd;
+$ilaese-gray-sixth:     #4f4f4f;
+$ilaese-black:          #121212;
+$ilaese-black-second:   #333333;
+$ilaese-green:          #27ae60;
+$ilaese-blue:           #4867aa;
+$ilaese-blue-second:    #00acee;
+$ilaese-pink:           #c52c72;
+$ilaese-red:            #ff0000;
+
+$theme-colors: (
+  'ilaese-first':         $ilaese-first,
+  'ilaese-second':        $ilaese-second, 
+  'ilaese-third':         $ilaese-third,
+  'ilaese-fourth':        $ilaese-fourth,
+  'ilaese-fifth':         $ilaese-fifth,
+  'ilaese-sixth':         $ilaese-sixth,
+  'ilaese-seventh':       $ilaese-seventh,
+  'ilaese-eighth':        $ilaese-eighth,
+  'ilaese-nineth':        $ilaese-nineth,
+  'ilaese-gray':          $ilaese-gray,
+  'ilaese-gray-fifth':    $ilaese-gray-fifth,
+  'ilaese-gray-sixth':    $ilaese-gray-sixth,
+  'ilaese-black':         $ilaese-black,
+  'ilaese-green':         $ilaese-green,
+  'ilaese-blue':          $ilaese-blue,
+  'ilaese-blue-second':   $ilaese-blue-second,
+  'ilaese-pink':          $ilaese-pink,
+  'ilaese-red':           $ilaese-red,
+);
+
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  'ilaese-12': $spacer * .75,
+  'ilaese-32': $spacer * 2,
+  'ilaese-40': $spacer * 2.5,
+  'ilaese-64': $spacer * 4,
+  'ilaese-80': $spacer * 5,
+  'ilaese-96': $spacer * 6,
+  'ilaese-128': $spacer * 8,
+);
+
+$font-family-sans-serif: 'Montserrat', sans-serif;
+$font-families: (
+  'montserrat': 'Montserrat',
+  'playfair': 'Playfair Display',
+);
+
+$font-sizes: (
+  12: 12px,
+  13: 13px,
+  14: 14px,
+  20: 20px,
+  24: 24px,
+  32: 32px,
+  48: 48px,
+);
+
+$opacities: (
+  10: 0.1,
+  20: 0.2,
+  25: 0.25,
+  50: 0.5,
+  75: 0.75,
+  100: 1,
+);
+
+$underline-height:          6px;
+$underline-radius:          $underline-height / 2;
+
+$font-weight-thin:          100;
+$font-weight-extra-light:   200;
+$font-weight-light:         300;
+$font-weight-regular:       400;
+$font-weight-medium:        500;
+$font-weight-semibold:      600;
+$font-weight-bold:          700;
+$font-weight-extrabold:     800;
+$font-weight-black:         900;
+
+$btn-padding-y:             16px;
+$btn-padding-x:             32px;
+$btn-font-size:             14px;
+
+$input-border-radius:       0;
+$input-border-color:        $ilaese-black;
+$input-font-size:           14px;
+$input-placeholder-color:   $ilaese-gray-second;
+$input-focus-box-shadow:    0 0 0 0.25rem rgba($input-border-color, .25);
+$input-focus-border-color:  #000;
+
+$input-padding-y-lg:        1rem;
+$input-padding-x-lg:        $input-padding-y-lg;
+$input-border-radius-lg:    $input-border-radius;
+$input-font-size-lg:        16px;
+
+$form-label-color:          $input-border-color;
+$form-label-font-size:      $input-font-size;
+$form-label-margin-bottom:  .25rem;
+
+$form-check-input-border-radius:      0;
+$form-check-input-focus-box-shadow:   $input-focus-box-shadow;
+$form-check-input-checked-bg-color:    $input-border-color;
+
+$breadcrumb-margin-bottom:  0;
+$breadcrumb-divider:        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='13' height='13' viewBox='0 0 10 15' fill='none'%3E%3Cpath d='M8.90625 8.03125C9.1875 7.75 9.1875 7.28125 8.90625 7L2.84375 0.90625C2.53125 0.625 2.0625 0.625 1.78125 0.90625L1.0625 1.625C0.78125 1.90625 0.78125 2.375 1.0625 2.6875L5.875 7.5L1.0625 12.3438C0.78125 12.6562 0.78125 13.125 1.0625 13.4062L1.78125 14.125C2.0625 14.4062 2.53125 14.4062 2.84375 14.125L8.90625 8.03125Z' fill='%238F5939'/%3E%3Cspan xmlns=''/%3E%3C/svg%3E");
+
+$nav-link-padding-y:                  0.75rem;
+$nav-link-padding-x:                  1.5rem;
+$nav-link-color:                      $ilaese-gray-second;
+$nav-tabs-link-active-color:          $ilaese-black-second;
+$nav-link-hover-color:                $ilaese-gray-third;
+$nav-tabs-link-active-bg:             $ilaese-gray;
+$nav-tabs-link-active-border-color:   $nav-tabs-link-active-bg;
+$nav-tabs-link-hover-border-color:    $nav-tabs-link-active-border-color;
+$nav-tabs-border-color:               $nav-tabs-link-active-border-color;
+$nav-tabs-border-radius:              8px;
