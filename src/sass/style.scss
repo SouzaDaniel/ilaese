@@ -55,6 +55,84 @@ body {
       color: $ilaese-second !important;
     }
   }
+
+  > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 1rem 2rem;
+
+    a {
+      @extend .text-reset;
+      text-decoration: none;
+    }
+
+    .menu-item-has-children {
+      position: relative;
+
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      column-gap: 12px;
+
+      &::after {
+        content: '';
+
+        display: inline;
+
+        width: 16px;
+        height: 16px;
+
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512' data-fa-i2svg=''%3E%3Cpath fill='%238f5939' d='M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z'%3E%3C/path%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      .menu-item-has-children {
+        &::after {
+          width: 40px;
+
+          background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3E%3Cpath fill='%238f5939' d='M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z'%3E%3C/path%3E%3C/svg%3E");
+        }
+      }
+
+      ul {
+        @extend .shadow;
+
+        padding: 4px 16px;
+        margin: 0;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        border-radius: 8px;
+        width: max-content;
+        max-width: 300px;
+
+        color: $ilaese-third;
+
+        position: absolute;
+        top: 100%;
+        z-index: 10;
+
+        background: white;
+        transition: 0.3s all;
+        visibility: hidden;
+        opacity: 0;
+        list-style-type: none;
+
+        li + li {
+          margin-top: 4px;
+          padding-top: 4px;
+          border-top: 1px solid $ilaese-third;
+        }
+      }
+      &:hover {
+        > ul {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
+  }
 }
 
 .after_header_menu {

@@ -49,8 +49,11 @@ $theme = get_bloginfo("template_url") . '/dist';
                 <a href="https://twitter.com/share?url=<?= urlencode(the_permalink()) ?>&text=<?= urlencode(the_title()) ?>" class="btn btn-ilaese-blue-second text-white p-ilaese-12 rounded-circle d-flex share">
                   <i class="fab fa-twitter"></i>
                 </a>
-                <a href="http://www.facebook.com/sharer/sharer.php?u=<?= urlencode(the_permalink()) ?>&t=<?= urlencode(the_title()) ?>" target="_blank" class="btn btn-ilaese-blue text-white p-ilaese-12 rounded-circle d-flex share">
+                <a href="https://www.facebook.com/sharer/sharer.php?u=<?= urlencode(the_permalink()) ?>&t=<?= urlencode(the_title()) ?>" target="_blank" class="btn btn-ilaese-blue text-white p-ilaese-12 rounded-circle d-flex share">
                   <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://api.whatsapp.com/send?text=<?= urlencode(the_permalink()) ?>" target="_blank" class="btn btn-ilaese-green text-white p-ilaese-12 rounded-circle d-flex">
+                  <i class="fab fa-whatsapp"></i>
                 </a>
               </div>
             </div>
