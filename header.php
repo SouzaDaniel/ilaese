@@ -1,5 +1,21 @@
 <?php
 $theme = get_bloginfo("template_url") . '/dist';
+
+if (is_front_page() && is_home()) {
+  $title = get_bloginfo("name");
+} else if (is_search()) {
+  $title = get_bloginfo("name") . ' - Você está pesquisando por "' . get_search_query() . '"';
+} else if (is_404()) {
+  $title = get_bloginfo("name") . " - Página não encontrada";
+} else if (is_single()) {
+  $title = get_bloginfo("name") . " - " . get_the_title();
+} else if (is_category()) {
+  $title = get_bloginfo("name") . ' - ' . get_queried_object()->name;
+} else if (is_archive()) {
+  $title = get_bloginfo("name") . ' - ' . get_queried_object()->label;
+} else {
+  $title = get_bloginfo("name");
+}
 ?>
 
 <!DOCTYPE html>
@@ -12,7 +28,8 @@ $theme = get_bloginfo("template_url") . '/dist';
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ilaese</title>
+
+  <title><?= $title; ?></title>
 
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet" />
 
