@@ -19,7 +19,7 @@ add_action('init', 'register_menus');
 function pt_repository()
 {
   $labels = array(
-    "name" => "Repositórios",
+    "name" => "Repositório",
     "singular_name" => "Repositório",
     "add_new" => "Adicionar novo repositório",
     "add_new_item" => "Adicionar novo repositório",
@@ -38,7 +38,7 @@ function pt_repository()
 
   $args = [
     "labels" => $labels,
-    "description" => "Post type to manage repositories",
+    "description" => "Post type to manage repository",
     "public" => true,
     "publicly_queryable" => true,
     "show_ui" => true,
@@ -60,6 +60,50 @@ function pt_repository()
   ];
 
   register_post_type("repository", $args);
+}
+
+function pt_youtube_embeds()
+{
+  $labels = array(
+    "name" => "Vídeos",
+    "singular_name" => "Vídeo",
+    "add_new" => "Adicionar novo vídeo",
+    "add_new_item" => "Adicionar novo vídeo",
+    "edit_item" => "Editar vídeo",
+    "new_item" => "Novo vídeo",
+    "view_item" => "Ver vídeo",
+    "view_items" => "Ver vídeos",
+    "search_items" => "Buscar vídeos",
+    "not_found" => "Nenhum vídeo encontrado",
+    "not_found_in_trash" => "Nenhum vídeo na lixeira",
+    "all_items" => "Todos vídeos",
+    "uploaded_to_this_item" => "Carregado para este vídeo",
+    "items_list" => "Lista de vídeos",
+    "item_updated" => "Vídeo atualizado"
+  );
+
+  $args = [
+    "labels" => $labels,
+    "description" => "Post type to manage youtube embed videos",
+    "public" => true,
+    "publicly_queryable" => true,
+    "show_ui" => true,
+    "show_in_rest" => true,
+    "rest_base" => "",
+    "rest_controller_class" => "WP_REST_Posts_Controller",
+    "has_archive" => false,
+    "show_in_menu" => true,
+    "show_in_nav_menus" => true,
+    "delete_with_user" => false,
+    "exclude_from_search" => false,
+    "capability_type" => "post",
+    "map_meta_cap" => true,
+    "hierarchical" => false,
+    "query_var" => true,
+    "supports" => ["title"],
+  ];
+
+  register_post_type("youtube_embeds", $args);
 }
 
 function tx_period()
@@ -117,6 +161,7 @@ function create_taxonomies()
 function create_posttypes()
 {
   pt_repository();
+  pt_youtube_embeds();
 }
 
 function add_features()

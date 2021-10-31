@@ -280,6 +280,53 @@ $theme = get_bloginfo("template_url") . '/dist';
   }
   ?>
 
+  <?php
+  $videos_query = new WP_Query(array(
+    'post_type' => 'youtube_embeds',
+    'meta_key' => 'fixed',
+    'meta_value' => true,
+  ));
+
+  if ($videos_query->have_posts()) {
+  ?>
+    <section class="bg-ilaese-gray">
+      <div class="container pt-ilaese-96 pb-ilaese-128">
+        <div class="row justify-content-center">
+          <div class="col-md-11 col-lg-10">
+            <div>
+              <h2 class="
+                    mb-4
+                    text-center
+                    fz-32
+                    ff-playfair
+                    fw-bold
+                    text-ilaese-black
+                  ">
+                Veja conteúdo exclusivo no Youtube
+              </h2>
+              <div class="row row-cols-1 row-cols-md-2 gapy-3">
+                <?php
+                while ($videos_query->have_posts()) {
+                  $videos_query->the_post();
+                ?>
+                  <div class="col">
+                    <div class="ratio ratio-16x9">
+                      <iframe src="https://www.youtube.com/embed/<?= get_field('video_id'); ?>" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                  </div>
+                <?php
+                }
+                ?>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  <?php
+  }
+  ?>
+
   <section class="bg-ilaese-fourth">
     <div class="container py-ilaese-96">
       <div class="row justify-content-center">
@@ -303,6 +350,7 @@ $theme = get_bloginfo("template_url") . '/dist';
       </div>
     </div>
   </section>
+
   <section>
     <div class="container py-ilaese-96">
       <div class="container">
