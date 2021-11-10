@@ -537,6 +537,42 @@ textarea {
   }
 }
 
+.comment-respond {
+  .comment-form {
+    @extend .gapy-3;
+
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-0.5 * var(--bs-gutter-x));
+    margin-left: calc(-0.5 * var(--bs-gutter-x));
+
+    > * {
+      flex-shrink: 0;
+      max-width: 100%;
+      padding-right: calc(var(--bs-gutter-x) * 0.5);
+      padding-left: calc(var(--bs-gutter-x) * 0.5);
+      margin-top: var(--bs-gutter-y);
+    }
+
+    .submit {
+      @extend .btn;
+      @extend .btn-ilaese-third;
+      @extend .fw-bold;
+      @extend .rounded-0;
+    }
+  }
+  .comment-reply-title {
+    @extend .fz-24;
+    @extend .ff-playfair;
+    @extend .text-ilaese-black;
+    @extend .fw-bold;
+    @extend .mb-4;
+  }
+}
+
 *::-webkit-scrollbar {
   width: 10px;
   height: 0;
