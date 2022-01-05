@@ -349,7 +349,7 @@ $theme = get_bloginfo("template_url") . '/dist';
               </div>
             </div>
             <div class="col-md-6 ms-auto">
-              <?= do_shortcode('[mc4wp_form id="30"]'); ?>
+              <?= do_shortcode('[mc4wp_form id="1442"]'); ?>
             </div>
           </div>
         </div>
