@@ -64,17 +64,21 @@ $first = true;
                     <div class="row gapy-2 mb-ilaese-32">
                       <div class="col-lg-7">
                         <div class="ratio ratio-16x9">
-                          <?php
-                          if (has_post_thumbnail()) {
-                          ?>
-                            <img src="<?= get_the_post_thumbnail_url() ?>" alt="<?= the_title(); ?>" />
-                          <?php
-                          } else {
-                          ?>
-                            <img src="<?= $theme . '/image/thumb-fallback.png' ?>" alt="<?= the_title(); ?>" />
-                          <?php
-                          }
-                          ?>
+                          <div>
+                            <a href="<?= the_permalink(); ?>">
+                              <?php
+                              if (has_post_thumbnail()) {
+                              ?>
+                                <img src="<?= get_the_post_thumbnail_url() ?>" alt="<?= the_title(); ?>" class="img-fluid" />
+                              <?php
+                              } else {
+                              ?>
+                                <img src="<?= $theme . '/image/thumb-fallback.png' ?>" alt="<?= the_title(); ?>" class="img-fluid" />
+                              <?php
+                              }
+                              ?>
+                            </a>
+                          </div>
                         </div>
                       </div>
                       <div class="col-lg-5">
@@ -82,9 +86,11 @@ $first = true;
                           <span class="text-ilaese-gray-fifth fz-14 mb-2">
                             Atualizado em <time datetime="2008-02-14 20:00<?= get_post_time('Y-m-d H:i'); ?>"><?= get_post_time('d/m/Y'); ?></time>
                           </span>
-                          <h2 class="ff-playfair fw-bold fz-24 text-ilaese-black mb-3">
-                            <?php the_title(); ?>
-                          </h2>
+                          <a href="<?= the_permalink(); ?>" class="text-decoration-none">
+                            <h2 class="ff-playfair fw-bold fz-24 text-ilaese-black mb-3">
+                              <?php the_title(); ?>
+                            </h2>
+                          </a>
                           <div class="mb-ilaese-32 text-ilaese-gray-sixth">
                             <?php the_excerpt(); ?>
                           </div>
@@ -101,24 +107,30 @@ $first = true;
                   <div class="col">
                     <div class="d-flex flex-column gapy-3">
                       <div class="ratio ratio-16x9">
-                        <?php
-                        if (has_post_thumbnail()) {
-                        ?>
-                          <img src="<?= get_the_post_thumbnail_url() ?>" alt="<?= the_title(); ?>" />
-                        <?php
-                        } else {
-                        ?>
-                          <img src="<?= $theme . '/image/thumb-fallback.png' ?>" alt="<?= the_title(); ?>" />
-                        <?php
-                        }
-                        ?>
+                        <div>
+                          <a href="<?= the_permalink(); ?>">
+                            <?php
+                            if (has_post_thumbnail()) {
+                            ?>
+                              <img src="<?= get_the_post_thumbnail_url() ?>" alt="<?= the_title(); ?>" class="img-fluid" />
+                            <?php
+                            } else {
+                            ?>
+                              <img src="<?= $theme . '/image/thumb-fallback.png' ?>" alt="<?= the_title(); ?>" class="img-fluid" />
+                            <?php
+                            }
+                            ?>
+                          </a>
+                        </div>
                       </div>
                       <span class="text-ilaese-gray-fifth fz-14 mb-2">
                         Atualizado em <time datetime="2008-02-14 20:00<?= get_post_time('Y-m-d H:i'); ?>"><?= get_post_time('d/m/Y'); ?></time>
                       </span>
-                      <h2 class="ff-playfair fw-bold fz-20 text-ilaese-black m-0">
-                        <?php the_title(); ?>
-                      </h2>
+                      <a href="<?= the_permalink(); ?>" class="text-decoration-none">
+                        <h2 class="ff-playfair fw-bold fz-20 text-ilaese-black m-0">
+                          <?php the_title(); ?>
+                        </h2>
+                      </a>
                       <div class="text-ilaese-gray-sixth mb-3">
                         <?php the_excerpt(); ?>
                       </div>

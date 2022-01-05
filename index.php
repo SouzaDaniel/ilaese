@@ -80,18 +80,20 @@ $theme = get_bloginfo("template_url") . '/dist';
         <div class="row justify-content-center">
           <div class="col-md-11 col-lg-10">
             <div class="d-flex flex-column gapy-4">
-              <h2 class="
-                    fz-32
-                    ff-playfair
-                    fw-bold
-                    text-ilaese-seventh
-                    m-0
-                    py-2
-                    px-ilaese-32
-                    bg-ilaese-seventh bg-opacity-10
-                  ">
-                <i class="fas fa-graduation-cap me-4"></i> Cursos
-              </h2>
+              <a href="<?= home_url('/categorias/cursos'); ?>" class="text-decoration-none">
+                <h2 class="
+                      fz-32
+                      ff-playfair
+                      fw-bold
+                      text-ilaese-seventh
+                      m-0
+                      py-2
+                      px-ilaese-32
+                      bg-ilaese-seventh bg-opacity-10
+                    ">
+                  <i class="fas fa-graduation-cap me-4"></i> Cursos
+                </h2>
+              </a>
               <div class="row row-cols-1 row-cols-md-3 gapy-3">
                 <?php
                 while ($courses_query->have_posts()) {
@@ -151,7 +153,8 @@ $theme = get_bloginfo("template_url") . '/dist';
         <div class="row justify-content-center">
           <div class="col-md-11 col-lg-10">
             <div class="d-flex flex-column gapy-4">
-              <h2 class="
+              <a href="<?= home_url('/categorias/boletim-contra-corrente'); ?>" class="text-decoration-none">
+                <h2 class="
                     fz-32
                     ff-playfair
                     fw-bold
@@ -161,8 +164,9 @@ $theme = get_bloginfo("template_url") . '/dist';
                     px-ilaese-32
                     bg-ilaese-sixth bg-opacity-20
                   ">
-                <i class="far fa-newspaper me-4"></i> Boletim Contra-Corrente
-              </h2>
+                  <i class="far fa-newspaper me-4"></i> Boletim Contra-Corrente
+                </h2>
+              </a>
               <div class="row row-cols-1 row-cols-md-3 gapy-3">
                 <?php
                 while ($bulletin_query->have_posts()) {
@@ -223,7 +227,8 @@ $theme = get_bloginfo("template_url") . '/dist';
         <div class="row justify-content-center">
           <div class="col-md-11 col-lg-10">
             <div class="d-flex flex-column gapy-4">
-              <h2 class="
+              <a href="<?= home_url('/categorias/estudos-economicos'); ?>" class="text-decoration-none">
+                <h2 class="
                     fz-32
                     ff-playfair
                     fw-bold
@@ -233,8 +238,9 @@ $theme = get_bloginfo("template_url") . '/dist';
                     px-ilaese-32
                     bg-ilaese-third bg-opacity-20
                   ">
-                <i class="fas fa-book me-4"></i> Estudos Econômicos
-              </h2>
+                  <i class="fas fa-book me-4"></i> Estudos Econômicos
+                </h2>
+              </a>
               <div class="row row-cols-1 row-cols-md-3 gapy-3">
                 <?php
                 while ($studies_query->have_posts()) {

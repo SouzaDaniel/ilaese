@@ -42,7 +42,9 @@ if (is_front_page() && is_home()) {
       <div class="container py-3">
         <div class="row justify-content-between align-items-center">
           <div class="col-auto">
-            <img src="<?= $theme; ?>/image/logo.png" alt="logo" class="img-fluid" />
+            <a href="<?= home_url(); ?>" class="d-flex">
+              <img src="<?= $theme; ?>/image/logo.png" alt="logo" class="img-fluid logo" />
+            </a>
           </div>
           <div class="col-auto d-lg-none">
             <button class="hamburguer collapsed" data-bs-toggle="collapse" data-bs-target="#navigation-area">
